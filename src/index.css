@@ -1,0 +1,42 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.bg_img {
+  background-image: url(../public/bg_home.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-size: contain;
+  background-position: top;
+}
+
+@media (min-width: 600px) {
+  .bg_img {
+    background-image: none;
+  }
+}
+
+/* In your Tailwind CSS configuration or in your HTML file */
+.custom-shadow {
+  text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.5);
+  
+}
+
+/* Define the custom white shadow color */
+.shadow-custom-white {
+  box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+}
+@media (max-width:376px)
+{
+  .custom-shadow {
+    text-shadow: 0px 0px 9px rgba(255, 255, 255, 0.4);
+    
+  }
+}
